@@ -3,11 +3,11 @@
  * @description System config model
  * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
-namespace Bina\Social\Model\System;
+namespace D3p1\Social\Model\System;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\ScopeInterface;
-use Bina\Social\Api\SystemConfigInterface;
+use D3p1\Social\Api\SystemConfigInterface;
 
 class Config implements SystemConfigInterface
 {

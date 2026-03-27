@@ -3,7 +3,7 @@
  * @description System config interface
  * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
-namespace Bina\Social\Api;
+namespace D3p1\Social\Api;
 
 interface SystemConfigInterface
 {

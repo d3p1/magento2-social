@@ -6,7 +6,7 @@
  */
 -->
 <widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
-    <widget id="bina_social" class="Bina\Social\Block\Widget\Social">
+    <widget id="d3p1_social" class="D3p1\Social\Block\Widget\Social">
         <label translate="true">Social Networks</label>
         <description translate="true">
             <![CDATA[Add your social networks to your site]]>

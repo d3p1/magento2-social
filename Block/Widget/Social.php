@@ -3,12 +3,12 @@
  * @description Social widget block
  * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
-namespace Bina\Social\Block\Widget;
+namespace D3p1\Social\Block\Widget;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Widget\Block\BlockInterface;
-use Bina\Social\Api\SystemConfigInterface;
+use D3p1\Social\Api\SystemConfigInterface;
 
 class Social extends Template implements BlockInterface
 {
@@ -20,7 +20,7 @@ class Social extends Template implements BlockInterface
     /**
      * @var string
      */
-    protected $_template = 'Bina_Social::widget/social.phtml';
+    protected $_template = 'D3p1_Social::widget/social.phtml';
 
     /**
      * Constructor

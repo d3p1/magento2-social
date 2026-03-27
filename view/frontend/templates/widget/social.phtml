@@ -7,32 +7,32 @@
 
 <?php
 /**
- * @var \Bina\Social\Block\Widget\Social $block
+ * @var \D3p1\Social\Block\Widget\Social $block
  */
 ?>
 
 <div class="social-container">
     <?php if ($facebook = $block->getFacebook()): ?>
         <a class="social facebook" target="_blank" href="<?php echo $facebook ?>">
-            <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/facebook.png') ?>">
+            <img src="<?php echo $block->getViewFileUrl('D3p1_Social::images/widget/social/facebook.png') ?>">
         </a>
     <?php endif; ?>
 
     <?php if ($instagram = $block->getInstagram()): ?>
         <a class="social instagram" target="_blank" href="<?php echo $instagram ?>">
-            <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/instagram.png') ?>">
+            <img src="<?php echo $block->getViewFileUrl('D3p1_Social::images/widget/social/instagram.png') ?>">
         </a>
     <?php endif; ?>
 
     <?php if ($twitter = $block->getTwitter()): ?>
         <a class="social twitter" target="_blank" href="<?php echo $twitter ?>">
-            <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/twitter.png') ?>">
+            <img src="<?php echo $block->getViewFileUrl('D3p1_Social::images/widget/social/twitter.png') ?>">
         </a>
     <?php endif; ?>
 
     <?php if ($discord = $block->getDiscord()): ?>
         <a class="social discord" target="_blank" href="<?php echo $discord ?>">
-            <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/discord.png') ?>">
+            <img src="<?php echo $block->getViewFileUrl('D3p1_Social::images/widget/social/discord.png') ?>">
         </a>
     <?php endif; ?>
 </div>

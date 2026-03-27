@@ -6,5 +6,5 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Bina\Social\Api\SystemConfigInterface" type="Bina\Social\Model\System\Config"/>
+    <preference for="D3p1\Social\Api\SystemConfigInterface" type="D3p1\Social\Model\System\Config"/>
 </config>
