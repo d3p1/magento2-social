@@ -1,105 +1,36 @@
 <?php
 /**
- *
  * @description Social widget template
- *
- * @author Bina Commerce      <https://www.binacommerce.com>
- * @author C. M. de Picciotto <cmdepicciotto@binacommerce.com>
- *
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
 ?>
 
 <?php
 /**
- *
  * @var \Bina\Social\Block\Widget\Social $block
- *
  */
 ?>
 
-<?php
-/**
- * 
- * @note Init container
- * 
- */
-?>
 <div class="social-container">
-    <?php
-    /**
-     *
-     * @note Check Facebook
-     *
-     */
-    ?>
     <?php if ($facebook = $block->getFacebook()): ?>
-        <?php
-        /**
-         *
-         * @note Add Facebook
-         *
-         */
-        ?>
         <a class="social facebook" target="_blank" href="<?php echo $facebook ?>">
             <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/facebook.png') ?>">
         </a>
     <?php endif; ?>
 
-    <?php
-    /**
-     *
-     * @note Check Instagram
-     *
-     */
-    ?>
     <?php if ($instagram = $block->getInstagram()): ?>
-        <?php
-        /**
-         *
-         * @note Add Instagram
-         *
-         */
-        ?>
         <a class="social instagram" target="_blank" href="<?php echo $instagram ?>">
             <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/instagram.png') ?>">
         </a>
     <?php endif; ?>
 
-    <?php
-    /**
-     *
-     * @note Check Twitter
-     *
-     */
-    ?>
     <?php if ($twitter = $block->getTwitter()): ?>
-        <?php
-        /**
-         *
-         * @note Add Twitter
-         *
-         */
-        ?>
         <a class="social twitter" target="_blank" href="<?php echo $twitter ?>">
             <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/twitter.png') ?>">
         </a>
     <?php endif; ?>
 
-    <?php
-    /**
-     *
-     * @note Check Discord
-     *
-     */
-    ?>
     <?php if ($discord = $block->getDiscord()): ?>
-        <?php
-        /**
-         *
-         * @note Add Discord
-         *
-         */
-        ?>
         <a class="social discord" target="_blank" href="<?php echo $discord ?>">
             <img src="<?php echo $block->getViewFileUrl('Bina_Social::images/widget/social/discord.png') ?>">
         </a>

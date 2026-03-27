@@ -1,11 +1,7 @@
 <?php
 /**
- *
  * @description Social widget block
- *
- * @author Bina Commerce      <https://www.binacommerce.com>
- * @author C. M. de Picciotto <cmdepicciotto@binacommerce.com>
- *
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
 namespace Bina\Social\Block\Widget;
 
@@ -17,54 +13,36 @@ use Bina\Social\Api\SystemConfigInterface;
 class Social extends Template implements BlockInterface
 {
     /**
-     *
      * @var SystemConfigInterface
-     *
      */
     protected $_config;
 
     /**
-     *
      * @var string
-     *
      */
     protected $_template = 'Bina_Social::widget/social.phtml';
 
     /**
-     *
      * Constructor
      *
      * @param SystemConfigInterface $config
      * @param Context               $context
      * @param array                 $data
-     *
      */
     public function __construct(
         SystemConfigInterface $config,
         Context               $context,
         array                 $data = []
     ) {
-        /**
-         *
-         * @note Init config model
-         *
-         */
         $this->_config = $config;
 
-        /**
-         *
-         * @note Call parent constructor
-         *
-         */
         parent::__construct($context, $data);
     }
 
     /**
-     *
      * Get Facebook
      *
      * @return string
-     *
      */
     public function getFacebook()
     {
@@ -72,11 +50,9 @@ class Social extends Template implements BlockInterface
     }
 
     /**
-     *
      * Get Instagram
      *
      * @return string
-     *
      */
     public function getInstagram()
     {
@@ -84,11 +60,9 @@ class Social extends Template implements BlockInterface
     }
 
     /**
-     *
      * Get Twitter
      *
      * @return string
-     *
      */
     public function getTwitter()
     {
@@ -96,11 +70,9 @@ class Social extends Template implements BlockInterface
     }
 
     /**
-     *
      * Get Discord
      *
      * @return string
-     *
      */
     public function getDiscord()
     {
@@ -108,11 +80,9 @@ class Social extends Template implements BlockInterface
     }
 
     /**
-     *
      * Get store ID
      *
      * @return int
-     *
      */
     private function _getStoreId()
     {

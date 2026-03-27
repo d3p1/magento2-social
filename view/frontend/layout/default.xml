@@ -1,38 +1,13 @@
 <?xml version="1.0"?>
 <!--
 /**
- *
  * @description Default layout customizations
- *
- * @author Bina Commerce      <https://www.binacommerce.com>
- * @author C. M. de Picciotto <cmdepicciotto@binacommerce.com>
- *
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <!--
-    /**
-     *
-     * @note Body
-     *
-     */
-    -->
     <body>
-        <!--
-        /**
-         *
-         * @note Footer container
-         *
-         */
-        -->
         <referenceContainer name="footer">
-            <!--
-            /**
-             *
-             * @note Add social networks
-             *
-             */
-            -->
             <block class="Bina\Social\Block\Widget\Social" name="footer_socials" after="footer_links"/>
         </referenceContainer>
     </body>

@@ -1,11 +1,7 @@
 <?php
 /**
- *
  * @description System config model
- *
- * @author Bina Commerce      <https://www.binacommerce.com>
- * @author C. M. de Picciotto <cmdepicciotto@binacommerce.com>
- *
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
 namespace Bina\Social\Model\System;
 
@@ -16,37 +12,22 @@ use Bina\Social\Api\SystemConfigInterface;
 class Config implements SystemConfigInterface
 {
     /**
-     *
      * @var ScopeConfigInterface
-     *
      */
     protected $_scopeConfig;
 
     /**
-     *
      * Constructor
      *
      * @param ScopeConfigInterface $scopeConfig
-     *
      */
     public function __construct(ScopeConfigInterface $scopeConfig)
     {
-        /**
-         *
-         * @note Init scope config model
-         *
-         */
         $this->_scopeConfig = $scopeConfig;
     }
 
     /**
-     *
-     * Get Facebook
-     *
-     * @param string|int $storeId
-     *
-     * @return string
-     *
+     * {@inheritDoc}
      */
     public function getFacebook($storeId)
     {
@@ -54,13 +35,7 @@ class Config implements SystemConfigInterface
     }
 
     /**
-     *
-     * Get Instagram
-     *
-     * @param string|int $storeId
-     *
-     * @return string
-     *
+     * {@inheritDoc}
      */
     public function getInstagram($storeId)
     {
@@ -68,13 +43,7 @@ class Config implements SystemConfigInterface
     }
 
     /**
-     *
-     * Get Twitter
-     *
-     * @param string|int $storeId
-     *
-     * @return string
-     *
+     * {@inheritDoc}
      */
     public function getTwitter($storeId)
     {
@@ -82,13 +51,7 @@ class Config implements SystemConfigInterface
     }
 
     /**
-     *
-     * Get Discord
-     *
-     * @param string|int $storeId
-     *
-     * @return string
-     *
+     * {@inheritDoc}
      */
     public function getDiscord($storeId)
     {
@@ -96,17 +59,18 @@ class Config implements SystemConfigInterface
     }
 
     /**
-     *
      * Retrieve information from service configuration
      *
-     * @param string     $field
-     * @param string|int $storeId
-     *
+     * @param  string     $field
+     * @param  string|int $storeId
      * @return mixed
-     *
      */
     protected function _getConfigData($field, $storeId)
     {
-        return $this->_scopeConfig->getValue($field, ScopeInterface::SCOPE_STORE, $storeId);
+        return $this->_scopeConfig->getValue(
+            $field,
+            ScopeInterface::SCOPE_STORE,
+            $storeId
+        );
     }
 }
