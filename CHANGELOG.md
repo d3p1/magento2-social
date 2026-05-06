@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/d3p1/magento2-social/compare/v1.0.1...v1.0.2) (2026-05-06)
+
+
+### Bug Fixes
+
+* improve code style [[#1](https://github.com/d3p1/magento2-social/issues/1)] ([c7328a4](https://github.com/d3p1/magento2-social/commit/c7328a49bce32fc8ec174580aab75f40ae986eb1))
+
 ## [1.0.1](https://github.com/d3p1/magento2-social/compare/v1.0.0...v1.0.1) (2026-05-05)
 
 
